@@ -18,7 +18,7 @@ Les admins, ux, identifiants gmail sont stockés en dur :
 
 Le fichier admin.txt doit se présenter sous cette forme :   
 email=monemail@f.com  
-password=YYYY-MM-DD  
+password=un_uuid  
 Il est possible de spécifier plusieurs administrateurs - et autant de mots de passe - en les séparant par des virgules, sans espace.  
 
 Le fichier mail.txt est prévu pour utiliser gmail, un seul utilisateur : 
