@@ -1,0 +1,17 @@
+version: '3.6'
+
+services:
+  serveur:
+    container_name: "serveur_med"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5621:5621
+
+  redis_med:
+    container_name: "redis_med"
+    image: redis:6
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    command: redis-server
